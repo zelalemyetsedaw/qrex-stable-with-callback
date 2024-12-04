@@ -1,0 +1,85 @@
+{
+  "name": "qrex",
+  "description": "QR-Code / 2D Barcode api with both server side and client side support using canvas",
+  "version": "0.1.0",
+  "type": "module",
+  "author": "Christian Llontop <me@chrisllontop.com>",
+  "keywords": [
+    "qr",
+    "code",
+    "canvas",
+    "qrcode",
+    "node-qrcode",
+    "qrcode-generator"
+  ],
+  "main": "dist/cjs/qrex.js",
+  "module": "dist/esm/qrex.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/qrex.js",
+      "import": "./dist/esm/qrex.js"
+    }
+  },
+  "browser": {
+    "./dist/cjs/qrex.js": "./dist/cjs/qrex.browser.js",
+    "fs": false
+  },
+  "files": [
+    "bin",
+    "dist",
+    "helper"
+  ],
+  "homepage": "https://github.com/chrisllontop/qrex",
+  "license": "MIT",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack dev",
+    "lint": "biome lint",
+    "lint:fix": "biome format --fix",
+    "test": "vitest --watch",
+    "prepublish": "npm run build"
+  },
+  "bin": {
+    "qrex": "./bin/qrex"
+  },
+  "dependencies": {
+    "@types/node-dijkstra": "^2.5.6",
+    "dijkstrajs": "^1.0.1",
+    "pngjs": "^5.0.0",
+    "qrex": "^0.1.0",
+    "vitest": "^2.1.6",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@biomejs/biome": "^1.9.4",
+    "@rspack/cli": "^1.1.0",
+    "@rspack/core": "^1.1.0",
+    "@types/node": "^22.10.1",
+    "@types/pngjs": "^6.0.5",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "@vitest/coverage-v8": "2.1.6",
+    "babel-loader": "^9.2.1",
+    "browserify": "^16.5.1",
+    "canvas": "^2.8.0",
+    "canvasutil": "0.0.4",
+    "colors": "^1.4.0",
+    "cross-env": "^7.0.3",
+    "htmlparser2": "^4.1.0",
+    "sinon": "latest",
+    "tap": "16",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisllontop/qrex.git"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
+}

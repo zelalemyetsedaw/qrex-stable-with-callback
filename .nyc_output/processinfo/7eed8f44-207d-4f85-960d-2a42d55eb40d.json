@@ -1,0 +1,16 @@
+{
+  "parent": "dd914502-316b-437f-b81c-105b4117533d",
+  "pid": 3372,
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\life\\Desktop\\Hate Speach\\.upwork projects\\qrex\\test.js"
+  ],
+  "execArgv": [],
+  "cwd": "C:\\Users\\life\\Desktop\\Hate Speach\\.upwork projects\\qrex",
+  "time": 1731314354244,
+  "ppid": 7244,
+  "coverageFilename": "C:\\Users\\life\\Desktop\\Hate Speach\\.upwork projects\\qrex\\.nyc_output\\7eed8f44-207d-4f85-960d-2a42d55eb40d.json",
+  "externalId": "test.js",
+  "uuid": "7eed8f44-207d-4f85-960d-2a42d55eb40d",
+  "files": []
+}
